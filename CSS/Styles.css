@@ -1,0 +1,223 @@
+@import url(./fonts.css);
+
+:root{
+  --Karma:'Karma',cursive;
+  --Lobster:'Lobster',cursive;
+  --Noto:'Noto',cursive;
+}
+
+html{
+  background: url(../Assets/Backgroundimage.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*-----------Global Var-----------*/
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+
+/*------x-----Global Var------x-----*/
+
+/*---------navbar----------*/
+.navbar{
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  width: 99%;
+  border-radius: 5px;
+
+}
+.title{
+  font-family: var(--Lobster);
+  font-size: 0.8rem;
+  color: white;
+}
+.navbar .nav-items{
+  font-family: var(--Lobster);
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.navbar .nav-items .nav-link{
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+.navbar .nav-items .nav-link a{
+  padding: 10px;
+}
+.navbar .nav-items .nav-link a:hover{
+  color: rgba(58, 118, 203, 1);
+}
+/*------x---navbar----x------*/
+
+/*-------------photo--------*/
+.profimg{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profimg img{
+  justify-self: flex-start;
+  border-radius: 50%;
+  padding: 80px 0px 80px 0px ;
+  width: 175px;
+  height: 175px;
+}
+
+.profimg p{
+  display: inline-block;
+  font-family: var(--Karma);
+  font-size: 3rem;
+  margin-left: 20px;
+  padding-top: 60px;
+  color: white;
+}
+/*----x---------photo----x----*/
+
+/*----------information-------------*/
+
+.myinfo{
+  padding: 0px 20px 50px 0px;
+}
+
+.myinfo .category{
+  font-family: var(--Lobster);
+  font-size: 1.1rem;
+}
+
+.myinfo .para{
+  font-family: var(--Noto);
+  margin: 0 auto;
+  padding: 5px 10px;
+  width: 400px;
+  height: (100px,auto) ;
+  border-style: solid;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 5px;
+  border-color: rgba(0,0,0);
+  color: white;
+}
+
+/*-----x-----information---------x----*/
+
+/*-------------form--------------*/
+
+.regform{
+  display: flex;
+  margin: auto;
+  width: 450px;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.form-control{
+  padding: 10px 0px 20px;
+}
+
+.form-control label{
+    display: inline-block;
+    padding: 0px 0px 10px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.form-control input{
+  padding: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 3px;
+  width: 90%;
+  font-size: 1rem;
+  font-family: var(--Noto);
+}
+
+.form-control.success input{
+  border-color:  rgba(4, 214, 0, 1);
+}
+
+.form-control.error input{
+  border-color: red;
+}
+
+.form-control i{
+  position: absolute;
+  visibility: hidden;
+  padding: 5px 5px 0px 0px;
+  font-size: 1.2rem;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50px;
+}
+
+.form-control.success i.fa-check-circle{
+  color:rgba(4, 214, 0, 1);
+  visibility: visible;
+} 
+
+.form-control.error i.fa-exclamation-circle{
+  color: red;
+  visibility: visible;
+}
+
+.form-control small{
+  position: relative;
+  visibility: hidden;
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+.form-control.error small{
+  visibility: visible;
+}
+
+
+
+.regform button{
+  margin-left: 165px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: var(--Noto);
+  font-size: 1.1rem;
+}
+
+.regform button:hover{
+  background-color: rgba(58, 118, 203, 1);
+}
+/*-------------form--------------*/
+
+/*----------social---------*/
+
+.social-links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links .link{
+  font-size: 1.4rem;
+  color: black;
+}
+
+.social-links .link i:hover{
+  color:rgba(58, 118, 203, 1);
+}
+/*-------x---social------x---*/
